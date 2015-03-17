@@ -8,5 +8,11 @@
    <bean id="helloWorld" class="spring.bean.HelloWorld" 
       scope="singleton">
    </bean>
+   
+   <bean id="helloWorldProtoType" class="spring.bean.HelloWorld" 
+      scope="prototype">
+   </bean>
+   
+   
 
 </beans>
