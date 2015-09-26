@@ -17,7 +17,7 @@ public class HelloWoldTest {
 	
 	@Autowired
 	IHelloWorld helloWorld;
-
+	
 	@Before
 	public void setUp() throws Exception {
 		
