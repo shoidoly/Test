@@ -1,9 +1,11 @@
 package io;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Files;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -17,7 +19,7 @@ public class ReadFileTest {
 	@Test
 	public void test() {
 		// The name of the file to open.
-        String fileName = "C:/download/W2 2014.pdf";
+        String fileName = "C:/download/Resume_Hyunsool_Song_201509.doc";
 
         // This will reference one line at a time
         String line = null;
@@ -50,6 +52,23 @@ public class ReadFileTest {
             // Or we could just do this: 
             // ex.printStackTrace();
         }
+	}
+	
+	@Test
+	public void testCopy(){
+		// The name of the file to open.
+        String source = "C:/download/Resume_Hyunsool_Song_201509.doc";
+        String dest = "C:/download/Resume_Hyunsool_Song_201509_new.doc";
+        try {
+			copyFileUsingJava7Files(new File(source), new File(dest));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	private void copyFileUsingJava7Files(File source, File dest) throws IOException{
+		Files.copy(source.toPath(), dest.toPath());
 	}
 
 }
