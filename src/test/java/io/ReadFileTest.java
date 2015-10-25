@@ -19,7 +19,7 @@ public class ReadFileTest {
 	@Test
 	public void test() {
 		// The name of the file to open.
-        String fileName = "C:/download/Resume_Hyunsool_Song_201509.doc";
+        String fileName = "C:/download/Resume_Hyunsool_Song.doc";
 
         // This will reference one line at a time
         String line = null;
@@ -57,8 +57,8 @@ public class ReadFileTest {
 	@Test
 	public void testCopy(){
 		// The name of the file to open.
-        String source = "C:/download/Resume_Hyunsool_Song_201509.doc";
-        String dest = "C:/download/Resume_Hyunsool_Song_201509_new.doc";
+        String source = "C:/download/Resume_Hyunsool_Song.doc";
+        String dest = "C:/download/Resume_Hyunsool_Song_new.doc";
         try {
 			copyFileUsingJava7Files(new File(source), new File(dest));
 		} catch (IOException e) {
