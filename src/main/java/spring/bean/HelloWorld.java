@@ -1,6 +1,8 @@
 package spring.bean;
 
-public class HelloWorld implements IHelloWorld {
+public class HelloWorld 
+	//implements IHelloWorld 
+	{
 	private String message;
 
 	/* (non-Javadoc)

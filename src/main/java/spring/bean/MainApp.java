@@ -8,14 +8,14 @@ public class MainApp {
 		ApplicationContext context = new ClassPathXmlApplicationContext(
 				"Beans.xml");
 
-		//HelloWorld objA = (HelloWorld) context.getBean("helloWorld");
-		IHelloWorld objA = (IHelloWorld) context.getBean("helloWorldProtoType");
+		HelloWorld objA = (HelloWorld) context.getBean("helloWorld");
+//		IHelloWorld objA = (IHelloWorld) context.getBean("helloWorldProtoType");
 
 		objA.setMessage("I'm object A");
 		objA.getMessage();
 
-		//HelloWorld objB = (HelloWorld) context.getBean("helloWorld");
-		IHelloWorld objB = (IHelloWorld) context.getBean("helloWorldProtoType");
+		HelloWorld objB = (HelloWorld) context.getBean("helloWorld");
+//		IHelloWorld objB = (IHelloWorld) context.getBean("helloWorldProtoType");
 		objB.getMessage();
 	}
 

@@ -70,5 +70,10 @@ public class ReadFileTest {
 	private void copyFileUsingJava7Files(File source, File dest) throws IOException{
 		Files.copy(source.toPath(), dest.toPath());
 	}
+	
+	@Test
+	public void numberTest(){
+		System.out.println("(2^0)"+(2^3));
+	}
 
 }
