@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+    <bean id="helloLanguage" class="spring.core.di.HelloLanguage">
+    	<property name="helloJava" ref="helloJava"/>
+    	<property name="helloC" ref="helloC"/>
+    </bean>
+
+   <bean id="helloJava" class="spring.core.di.HelloJava"></bean>
+   <bean id="helloC" class="spring.core.di.HelloC"></bean>
+
+</beans>
