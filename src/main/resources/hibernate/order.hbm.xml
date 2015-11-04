@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="hibernate.bean.Order" table="ORDER_MASTER">
+		<id name="id" column="ORDER_ID">
+			<generator class="identity"></generator>
+		</id>
+
+		<property name="date" column="ORDER_DATE"></property>
+		<list name="orderList" cascade="all">
+			<key column="qid"></key>
+			<index column="type"></index>
+			<one-to-many class="hibernate.bean.Product" />
+		</list>
+	</class>
+
+	<class name="hibernate.bean.Product" table="PRODUCT_MASTER">
+		<id name="id" column="PRODUCT_ID">
+			<generator class="identity"></generator>
+		</id>
+		<property name="name" column="PRODUCT_NAME"></property>
+		<property name="description" column="PRODUCT_DESC"></property>
+	</class>
+
+</hibernate-mapping>
