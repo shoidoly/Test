@@ -21,7 +21,7 @@ public class HibernetTest {
 		employee1.setPhoneNumber("214-123-7389");
 		
 		employeeDao.addEmployee(employee1);
-		System.out.println(employeeDao.getById(1));
+		System.out.println(employeeDao.getById(2));
 		
 		
 		

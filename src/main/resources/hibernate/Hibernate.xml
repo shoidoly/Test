@@ -13,7 +13,7 @@
 
 		<property name="mappingResources">
 			<list>
-				<value>employee.hbm.xml</value>
+				<value>hibernate/employee.hbm.xml</value>
 			</list>
 		</property>
 
