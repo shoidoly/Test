@@ -3,6 +3,10 @@ package pattern.observer;
 import org.junit.Before;
 import org.junit.Test;
 
+import pattern.creational.observer.ConcreteSubject;
+import pattern.creational.observer.CurrentStatus;
+import pattern.creational.observer.FutureStatus;
+
 public class ObserverTest {
 
 	@Before

@@ -7,4 +7,6 @@ public interface EmployeeDao {
 	
 	public Employee getById(int id);
 	
+	public void deleteEmployee(Employee employee);
+	
 }

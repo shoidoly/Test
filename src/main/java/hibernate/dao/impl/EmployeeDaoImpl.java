@@ -1,5 +1,8 @@
 package hibernate.dao.impl;
 
+import java.util.List;
+
+import org.hibernate.Criteria;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate3.HibernateTemplate;
@@ -25,6 +28,15 @@ public class EmployeeDaoImpl implements EmployeeDao  {
 	public Employee getById(int id){
 		Employee employee = (Employee)template.get(Employee.class, id);
 		return employee;
+	}
+	
+	public List<Employee> getEmployeeListByName(String name){
+		
+		return null; 
+	}
+
+	public void deleteEmployee(Employee employee) {
+		template.delete(employee);
 	}
 	
 }

@@ -57,8 +57,8 @@ public class ReadFileTest {
 	@Test
 	public void testCopy(){
 		// The name of the file to open.
-        String source = "C:/download/Resume_Hyunsool_Song.doc";
-        String dest = "C:/download/Resume_Hyunsool_Song_new.doc";
+        String source = "C:/download/I-9.pdf";
+        String dest = "C:/download/I-9_new.pdf";
         try {
 			copyFileUsingJava7Files(new File(source), new File(dest));
 		} catch (IOException e) {
