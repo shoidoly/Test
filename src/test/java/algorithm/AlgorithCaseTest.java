@@ -18,16 +18,6 @@ public class AlgorithCaseTest {
 	public void setUp() throws Exception {
 	}
 
-	@Test
-	public void test() {
-		String[] a = {"aa", "bb", "ab"};
-		String[] b = {"bb", "ab", "aa"};
-		Arrays.sort(a);
-		//Arrays.sort(b);
-		printStr(a);
-		printStr(b);
-		assertArrayEquals(a, b);
-	}
 	
 	@Test
 	public void testLinkedList() {
